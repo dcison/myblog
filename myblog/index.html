@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dcison's Blog</title>
+    <link rel="shortcut icon" href="img/icon.ico">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <style>
+        .clearfix{
+            clear:both;
+        }
+        #loading {
+            background-color: #9966CC;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            margin-top: 0px;
+            top: 0px;
+        }
+        
+        #loading-center {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        #loading-center-absolute {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 50px;
+            width: 300px;
+            margin-top: -25px;
+            margin-left: -150px;
+        }
+        
+        .object {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            float: left;
+            margin-top: 15px;
+            margin-right: 15px;
+            -moz-border-radius: 50% 50% 50% 50%;
+            -webkit-border-radius: 50% 50% 50% 50%;
+            border-radius: 50% 50% 50% 50%;
+            -webkit-animation: object 1s infinite;
+            animation: object 1s infinite;
+        }
+        
+        .object:last-child {
+            margin-right: 0px;
+        }
+        
+        .object:nth-child(9) {
+            -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+        }
+        
+        .object:nth-child(8) {
+            -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+        }
+        
+        .object:nth-child(7) {
+            -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+        }
+        
+        .object:nth-child(6) {
+            -webkit-animation-delay: 0.6s;
+            animation-delay: 0.6s;
+        }
+        
+        .object:nth-child(5) {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+        
+        .object:nth-child(4) {
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+        }
+        
+        .object:nth-child(3) {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+        }
+        
+        .object:nth-child(2) {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+        }
+        
+        @-webkit-keyframes object {
+            50% {
+                -ms-transform: translate(0, -50px);
+                -webkit-transform: translate(0, -50px);
+                transform: translate(0, -50px);
+            }
+        }
+        
+        @keyframes object {
+            50% {
+                -ms-transform: translate(0, -50px);
+                -webkit-transform: translate(0, -50px);
+                transform: translate(0, -50px);
+            }
+        }
+        /*动画效果到此结束*/
+    </style>
+</head>
+
+<body style="overflow: hidden">
+    <div id="loading">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+                <div class="object"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="bg"></div>
+    <div id="navbar">
+        <div class="">
+            <div id="navbar-brand">
+                <a href="index.html" style="text-indent: 2em">Dcison's Blog</a>
+            </div>
+            <div id="navbar-right">
+                <div id="navbar-toggle">
+                    <i class="fa fa-list-ul"></i>
+                </div>
+                <div dropdown="false" id="navbar-responsive">
+                    <a href="index.html">Home</a>
+                    <a href="about/about.html">About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="container">
+
+            <div id="main-field" class="clearfix">
+                <div id="field" class="clearfix">
+                    <!-- 从这开始是左边栏 -->
+                    <div id="sidebar">
+                        <div id="sidebar-info">
+                            <img id="avatar" src="img/avatar.jpg">
+                            <div id="content">
+                                少吹逼，多做事。
+                                <br>小心什么都没学到，最终一事无成。
+                            </div>
+                            <ul id="friend-list">
+                                <h3>Friends</h3>
+                                <li>
+                                    <a href="http://priscillajrlm.lofter.com/">剑若流芒</a>
+                                </li>
+                                <li>
+                                    <a href="https://pipecat.github.io">PIPECAT</a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.mzisite.me/">MZI</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--左边栏结束-->
+                    <!--从这开始是博客正文-->
+                    <div id="article-container" class="col-9" ">
+                        <div class="article ">
+                            <div class="title ">
+                                <h2>南邮CTF部分题解</h2>
+                            </div>
+                            <div class="time ">2017-03-20</div>
+                            <div class="brief ">
+                                <p>把以前blog的文章丢过来测试下，不过以后文章估计还是主要在csdn写
+                                    <br>毕竟能力有限，这个blog功能不够好。
+                                </p>
+                            </div>
+                            <div class="blog-footer ">
+                                <a href="http://blog.csdn.net/dcison/article/details/53125540 ">继续阅读</a>
+                            </div>
+                        </div>
+
+                        <div class="article ">
+                            <div class="title ">
+                                <h2>第一篇blog测试</h2>
+                            </div>
+                            <div class="time ">2017-02-20</div>
+                            <div class="brief ">
+                               <p>这是blog的第一篇文章用于测试
+                                    <br>良神是大神，什么都会。
+                                    <br>路神是舔王，舔技一流。
+                                    <br>远鹏是车神，天天开车。
+                                    <br>下面文章链接是良神的blog。                    
+                               </p>
+                            </div>
+                            <div class="blog-footer ">
+                                <a href="https://blog.mzisite.me/ ">继续阅读</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div id="footer">
+        <div id="test">
+            <span>Theme by</span>
+            <a id="theme " href="https://blog.mzisite.me/ ">MZI</a>
+            <span>|| Copyright © </span>
+            <a id="copyright " href="https://coding.net/u/Dcison "> Dcison</a>
+
+        </div>
+    </div>
+    <script type="text/javascript " src="js/jquery-2.0.2.min.js "></script>
+    <script type="text/javascript " src="js/main.js ">loding动画的js<</script>
+    <script type="text/javascript " src="js/index.js "></script>
+    <script src="js/snowfall.jquery.js "></script>
+</body>
+
+</html>
